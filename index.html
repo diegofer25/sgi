@@ -92,6 +92,55 @@
       </a>
     </div>
     
+    <div class="fluid">
+      <h2>Filtre seu evento</h2>
+      <div class="btn-group">
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Evento<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Filme</a></li>
+          <li><a href="#">Show</a></li>
+          <li><a href="#">Teatro</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Categoria do Evento<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Categoria I</a></li>
+          <li><a href="#">Categoria II</a></li>
+          <li><a href="#">Categoria III</a></li>
+          <li><a href="#">Categoria IV</a></li>
+          <li><a href="#">Categoria V</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker1').datetimepicker({
+                      format: 'mm/dd/yyyy',
+                      startDate: '-3d'
+                  });
+                });
+            </script>
+        </div>
+    </div>
+
+    </div>
+
+    <h2>Sugestões</h2>
+
     <footer>
       <hr> Sistema de Gestão de Ingressos &copy; 2018
     </footer>
