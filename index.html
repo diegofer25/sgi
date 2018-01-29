@@ -6,16 +6,20 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
   <link rel="stylesheet" href="./style.css">
   <script src="script.js" ></script>
 </head>
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-inverse">
+
+  <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <a id="icon" class="navbar-brand" href="#">
@@ -57,7 +61,8 @@
         </form>
       </div>
     </nav>
-
+  
+  <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -104,7 +109,7 @@
       </div>
 
       <div class="btn-group">
-        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Categoria do Evento<span class="caret"></span></a>
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Categoria<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Categoria I</a></li>
           <li><a href="#">Categoria II</a></li>
@@ -114,32 +119,79 @@
         </ul>
       </div>
 
-      <div class="container">
-        <div class="row">
-            <div class='col-sm-6'>
-                <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
-                        <input type='text' class="form-control" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
+      <div class="btn-group">
+        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Local<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Local I</a></li>
+          <li><a href="#">Local II</a></li>
+          <li><a href="#">Local III</a></li>
+          <li><a href="#">Local IV</a></li>
+          <li><a href="#">Local V</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="fluid">
+      <h4>Selecione a data e hora do evento procurado</h4>
+      <div class="row">
+        <div class='col-sm-5'>
+          <div class="form-group">
+            <div class='input-group date' id='datetimepicker1'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+              </span>
             </div>
-            <script type="text/javascript">
-                $(function () {
-                    $('#datetimepicker1').datetimepicker({
-                      format: 'mm/dd/yyyy',
-                      startDate: '-3d'
-                  });
-                });
-            </script>
+          </div>
+        </div>
+        <button type="button" class="btn btn-success">Buscar!!</button>
+      </div>
+    </div>
+
+     <div id="about">
+          <h2>Sugestões</h2>
+        <div class="row about-cols">
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="images/abelaeaferamovie.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">A Bela e a Fera - Disney</a></h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="images/luansantana.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Luan Santana</a></h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="images/4amigos.jpeg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">4 amigos</a></h2>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+              </p>
+            </div>
+          </div>
         </div>
     </div>
-
-    </div>
-
-    <h2>Sugestões</h2>
 
     <footer>
       <hr> Sistema de Gestão de Ingressos &copy; 2018
